@@ -10,9 +10,10 @@ app.use(express.json());
 
 //const cadastro = require('./routes')
 
+app.get("/paciente/:id", pacienteController.consultaPaciente);
+app.post("/paciente", pacienteController.cadastroPaciente);
+
+
 app.listen(3000, () => {
   console.log("server rodando");
 });
-
-app.get("/paciente/:id", pacienteController.consultaPaciente);
-app.post("/paciente", pacienteController.cadastroPaciente);
