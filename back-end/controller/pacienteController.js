@@ -29,3 +29,17 @@ exports.cadastroPaciente = async (req, res) => {
     console.error(error.message);
   }
 };
+
+exports.atualizaPaciente = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { nome, data_nascimento } = req.body;
+    const result = await pool.query(
+      "UPDATE paciente SET nome = $1, data_nascimento = $2 WHERE id_paciente= $3",
+      [nome, data_nascimento, id]
+    );
+    res.json(result.rows[0]);
+  } catch (error) {
+      console.error(error.message)
+  }
+};

@@ -16,3 +16,4 @@ app.listen(3000, () => {
 
 app.get("/paciente/:id", pacienteController.consultaPaciente);
 app.post("/paciente", pacienteController.cadastroPaciente);
+app.put("/paciente/:id", pacienteController.atualizaPaciente);
