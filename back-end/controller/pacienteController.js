@@ -1,4 +1,4 @@
-const pool = require("./../db");
+const pool = require("./../database/index.js");
 
 exports.consultaPaciente = async (req, res) => {
   try {
@@ -7,7 +7,7 @@ exports.consultaPaciente = async (req, res) => {
       "select * from paciente where id_paciente= $1",
       [id]
     );
-    res.json(result.rows[0]);
+    return res.json(result.rows[0]);
   } catch (error) {
     console.error(error.message);
   }
