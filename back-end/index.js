@@ -23,5 +23,5 @@ app.delete("/vacinaAplicada/:idPaciente/:idVacina", vacinaAplicadaController.exc
 app.get("/vacina/:doencaProtecao", vacinaController.consultaVacinaProtecao);
 
 app.listen(3000, () => {
-  console.log("server rodando");
+  console.log("> Server is running");
 });
