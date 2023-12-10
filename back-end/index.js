@@ -1,6 +1,9 @@
 const express = require("express");
 const pacienteController = require("./controller/pacienteController");
 const vacinaAplicadaController = require("./controller/vacinaAplicadaController");
+const vacinaCosultaAno = require("./controller/vacinaCosultaAno");
+
+
 
 const app = express();
 
@@ -18,6 +21,14 @@ app.post("/paciente", pacienteController.atualizaPaciente);
 app.get("/vacinaAplicada/:idPaciente", vacinaAplicadaController.consultaVacinaPaciente);
 app.post("/vacinaAplicada/:idPaciente", vacinaAplicadaController.cadastroVacinaPaciente);
 app.delete("/vacinaAplicada/:idPaciente/:idVacina", vacinaAplicadaController.excluirVacinaPaciente);
+
+app.get("/vacinaCosultaAno", vacinaCosultaAno.consultaAno)
+app.get("/vacinaCosultaAno", vacinaCosultaAno.consultaAnoFinal)
+
+
+app.get("/vacinaCosultames", vacinaCosultames.consultames)
+app.get("/vacinaCosultames", vacinaCosultames.consultamesFinal)
+
 
 
 
