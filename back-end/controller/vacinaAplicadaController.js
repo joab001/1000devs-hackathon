@@ -7,7 +7,7 @@ exports.consultaVacinaPaciente = async (req, res) => {
       "select * from VACINAAPLICADA where ID_PACIENTE = $1",
       [idPaciente]
     );
-    return res.json(result.rows[0]);
+    return res.json(result.rows);
   } catch (error) {
     console.error(error.message);
     return res.json({

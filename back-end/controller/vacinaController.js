@@ -4,10 +4,10 @@ exports.consultaVacinaProtecao = async (req, res) => {
   try {
     const { doencaProtecao } = req.params;
     const result = await pool.query(
-      "select * from VACINA where DOENCA_PROTECAO LIKE $1",
+      "select * from VACINA where DOENCA_PROTECAO ILIKE $1",
       ["%" + doencaProtecao + "%"]
     );
-    return res.json(result.rows[0]);
+    return res.json(result.rows);
   } catch (error) {
     console.error(error.message);
     return res.json({
