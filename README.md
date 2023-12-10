@@ -2,45 +2,61 @@
 
 <p align="center">
     <img alt="Badge indicando que o projeto foi criado em Dezembro de 2023" src="https://img.shields.io/badge/Data%20de%20cria%C3%A7%C3%A3o-Dezembro%2F2023-B61010">
-    <img alt="Badge indicando que o status do projeto é 'Em Progresso'" src="https://img.shields.io/badge/Status-Em Progresso-yellow">
+    <img alt="Badge indicando que o status do projeto é 'Em Progresso'" src="https://img.shields.io/badge/Status-Concluído-yellow">
 </p>
 
 <p align="center">
-    • <a href="#como acessar">Como acessar?</a>
     • <a href="#descricao">Descrição</a>
     • <a href="#funcionalidades">Funcionalidades</a>
     • <a href="#funcionalidades a implementar">Funcionalidades a Implementar</a>
-    • <a href="#creditos">Créditos</a>
     • <a href="#tecnologias">Tecnologias</a>
     • <a href="#Desenvolvedores">Desenvolvedores</a>
 </p>
 
-<p align="center">
-   <img src="" alt="gif mostrando o funcionamento do projeto" /> 
-</p>
-
-<h2 id="como acessar"> :computer_mouse: Como acessar?</h2>
-
-Confira e utilize o projeto no <a href="">github pages</a>.
-
+## Rotas da api
+<a href="Rotas da api.json">Clique aqui para ir para o arquivo de rotas que pode ser importado no Insomnia</a>
 
 <h2 id="descricao">:pencil2: Descrição</h2>
 Esse projeto foi desenvolvido para atender aos requisitos do desafio proposto pela Hackathon do 1000devs 2023, onde foi solicitado o desenvolvimento de uma API REST ustilizando node.js para a construção de uma carteira digital de vacinação. A API criada, realiza todas as interações de cadastro e pesquisa das informações dos pacientes. 
 
 <h2 id="funcionalidades">:hammer: Funcionalidades</h2>
 
-- 
-- 
+- Requisito de Nível 1 (Pessoas/Paciente): Rota de cadastro de pessoas;  
+- Requisito de Nível 1 (Pessoas/Paciente): Rota de atualização de pessoas;
+- Requisito de Nível 1 (Pessoas/Paciente): Rota de pesquisa por pessoas;
+- Requisito de Nível 1 (Registro de Vacina Aplicada): Rota de cadastro ;
+- Requisito de Nível 1 (Registro de Vacina Aplicada): Rota  de exclusão;
+- Requisito de Nível 1 (Registro de Vacina Aplicada):  de pesquisa;
+- Requisito de Nível 1 (Consulta de Vacina): Rota  de pesquisa de vacina;
+- Requisito de Nível 1 (Consulta de Vacina - Idade): Rota de pesquisa de vacina por ano (exato);
+- Requisito de Nível 1 (Consulta de Vacina - Idade): Rota  de pesquisa de vacina por ano (até);
+- Requisito de Nível 1 (Consulta de Vacina - Idade): Rota de pesquisa de vacina por mês (exato);
+- Requisito de Nível 1 (Consulta de Vacina - Idade): Rota de pesquisa de vacina por mês (até);
+-  Requisito de Nível 1 (Consulta de Vacina – Proteção): Rota de pesquisa de vacina por 
+proteção (texto);
+- Requisito de Nível 1 (Consulta de Vacina - Paciente): Rota de pesquisa de vacina por paciente;
+- Requisito de Nível 1 (Consulta de Vacina - Paciente): Rota de pesquisa de vacinas pendentes 
+para um determinado paciente;
+- Requisito de Nível 1 (Campanha de Vacinação
+): Rota de cadastro de campanha;
+- Requisito de Nível 1 (Campanha de Vacinação
+): Rota de edição de uma campanha;
+- Requisito de Nível 1 (Campanha de Vacinação
+): Rota de cadastro de vacina em uma campanha;
+- Requisito de Nível 1 (Campanha de Vacinação
+): Rota para deletar vacina de uma campanha;
+- Requisito de Nível 1 (Campanha de Vacinação
+): Rota de pesquisa de campanha por data;
+- Requisito de Nível 1 (Campanha de Vacinação
+): Rota de campanha através da proteção da 
+vacina (texto).
+
 
 <h2 id="funcionalidades a implementar">:pencil: Funcionalidades a Implementar</h2>
 
-- 
+- Requisitos de nível 2;
+- Requisitos de nível 3.
 
-<h2 id="creditos">:pushpin: Créditos</h2>
-
-- 
-
-- 
 
 <h2 id="tecnologias">:computer: Tecnologias</h2>
 <p align="center">
