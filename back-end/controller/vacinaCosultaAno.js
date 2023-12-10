@@ -2,7 +2,7 @@ const pool = require("./../database/index.js");
 
 exports.consultaAno = async (req, res) => {
   try {
-    const { Ano } = req.params;
+    const { ano } = req.params;
     const result = await pool.query(
       ""
     );
@@ -14,7 +14,7 @@ exports.consultaAno = async (req, res) => {
 
 exports.consultaAnoFinal = async (req, res) => {
     try {
-      const { AnoFinal } = req.params;
+      const { anoFinal } = req.params;
       const result = await pool.query(
         ""
       );

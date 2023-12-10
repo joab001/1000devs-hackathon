@@ -4,7 +4,7 @@ exports.consultaAno = async (req, res) => {
   try {
     const { mes } = req.params;
     const result = await pool.query(
-      ""
+      "select * from paciente where id_paciente= $1"
     );
     return res.json(result.rows[0]);
   } catch (error) {
