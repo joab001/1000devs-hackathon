@@ -1,5 +1,6 @@
 const express = require("express");
 const pacienteController = require("./controller/pacienteController");
+const vacinaAplicadaController = require("./controller/vacinaAplicadaController");
 
 const app = express();
 
@@ -13,6 +14,9 @@ app.use(express.json());
 app.get("/paciente/:id", pacienteController.consultaPaciente);
 app.post("/paciente", pacienteController.cadastroPaciente);
 
+app.get("/vacinaAplicada/:idPaciente", vacinaAplicadaController.consultaVacinaPaciente);
+app.post("/vacinaAplicada/:idPaciente", vacinaAplicadaController.cadastroVacinaPaciente);
+app.delete("/vacinaAplicada/:idPaciente/:idVacina", vacinaAplicadaController.excluirVacinaPaciente);
 
 app.listen(3000, () => {
   console.log("server rodando");
