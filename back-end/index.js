@@ -14,6 +14,7 @@ app.use(express.json());
 
 app.get("/paciente/:id", pacienteController.consultaPaciente);
 app.post("/paciente", pacienteController.cadastroPaciente);
+app.post("/paciente", pacienteController.atualizaPaciente);
 
 app.get("/vacinaAplicada/:idPaciente", vacinaAplicadaController.consultaVacinaPaciente);
 app.post("/vacinaAplicada/:idPaciente", vacinaAplicadaController.cadastroVacinaPaciente);
