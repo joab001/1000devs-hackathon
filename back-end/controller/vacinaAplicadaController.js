@@ -11,7 +11,7 @@ exports.consultaVacinaPaciente = async (req, res) => {
   } catch (error) {
     console.error(error.message);
     return res.json({
-      message: "There was an error during the search for the pacient's vacines",
+      message: "There was an error during the search for the pacient's vaccines",
     });
   }
 };
@@ -28,7 +28,7 @@ exports.cadastroVacinaPaciente = async (req, res) => {
   } catch (error) {
     console.error(error.message);
     return res.json({
-      message: "There was an error while adding the pacient's vacine",
+      message: "There was an error while adding the pacient's vaccine",
     });
   }
 };
@@ -44,7 +44,7 @@ exports.excluirVacinaPaciente = async (req, res) => {
   } catch (error) {
     console.error(error.message);
     return res.json({
-      message: "There was an error while trying to delete the pacient's vacine",
+      message: "There was an error while trying to delete the pacient's vaccine",
     });
   }
 };

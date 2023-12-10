@@ -1,9 +1,6 @@
 const express = require("express");
 const pacienteController = require("./controller/pacienteController");
 const vacinaAplicadaController = require("./controller/vacinaAplicadaController");
-const vacinaCosultaAno = require("./controller/vacinaCosultaAno");
-
-
 
 const app = express();
 
@@ -30,8 +27,8 @@ app.get("/vacinaCosultames", vacinaCosultames.consultames)
 app.get("/vacinaCosultames", vacinaCosultames.consultamesFinal)
 
 
-
+app.get("/vacina/:doencaProtecao", vacinaController.consultaVacinaProtecao);
 
 app.listen(3000, () => {
-  console.log("server rodando");
+  console.log("> Server is running");
 });
