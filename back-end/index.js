@@ -6,6 +6,8 @@ const vacinaCosultaAnoController = require("./controller/vacinaCosultaAno");
 const vacinaController = require("./controller/vacinaController");
 const vacinaPacienteController = require("./controller/vacinaPacienteController");
 const vacinaCosultames = require("./controller/vacinaCosultames");
+const vacinaController = require("./controller/vacinaController");
+
 
 const app = express();
 
@@ -33,11 +35,6 @@ app.delete(
   vacinaAplicadaController.excluirVacinaPaciente
 );
 
-app.get("/vacinaCosultaAno", vacinaCosultaAnoController.consultaAno);
-app.get("/vacinaCosultaAno", vacinaCosultaAnoController.consultaAnoFinal);
-
-//app.get("/vacinaCosultames", vacinaCosultames.consultames);
-//app.get("/vacinaCosultames", vacinaCosultames.consultamesFinal);
 
 app.get("/vacina/:doencaProtecao", vacinaController.consultaVacinaProtecao);
 
@@ -65,6 +62,12 @@ app.get(
   "/campanha/:doencaProtecao",
   campanhaController.consultaCampanhaProtecaoDaVacina
 );
+
+app.get("/vacina/consulta", vacinaController.consultaVacina);
+app.get("/vacina/consultarAno/:ano", vacinaController.consultarAno);
+app.get("/vacina/consultaIntervaloAnual/:inicio/:fim", vacinaController.consultaIntervaloAnual);
+app.get("/vacina/consultaIntervaloMensal/:inicio/:fim", vacinaController.consultaIntervaloMensal);
+app.get("/vacina/consultaMensal/:mes", vacinaController.consultaMensal);
 
 app.listen(3000, () => {
   console.log("> Server is running");
